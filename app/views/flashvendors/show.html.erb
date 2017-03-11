@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor name:</strong>
+  <%= @flashvendor.vendor_name %>
+</p>
+
+<p>
+  <strong>Vendor description:</strong>
+  <%= @flashvendor.vendor_description %>
+</p>
+
+<p>
+  <strong>Vendor url:</strong>
+  <%= @flashvendor.vendor_url %>
+</p>
+
+<%= link_to 'Edit', edit_flashvendor_path(@flashvendor) %> |
+<%= link_to 'Back', flashvendors_path %>

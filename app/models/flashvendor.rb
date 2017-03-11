@@ -1,0 +1,2 @@
+class Flashvendor < ApplicationRecord
+end

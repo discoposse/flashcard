@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Flashvendors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vendor name</th>
+      <th>Vendor description</th>
+      <th>Vendor url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flashvendors.each do |flashvendor| %>
+      <tr>
+        <td><%= flashvendor.vendor_name %></td>
+        <td><%= flashvendor.vendor_description %></td>
+        <td><%= flashvendor.vendor_url %></td>
+        <td><%= link_to 'Show', flashvendor %></td>
+        <td><%= link_to 'Edit', edit_flashvendor_path(flashvendor) %></td>
+        <td><%= link_to 'Destroy', flashvendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Flashvendor', new_flashvendor_path %>
